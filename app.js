@@ -8,8 +8,6 @@ var app = express();
 app.use("/v1", apiVersion1);
 app.use("/v2", apiVersion2);
 
-// res.status(404).json({ error: "Resource not found." });
-
 app.use(function (req, res) {
 	res.status(404).json({ error: "Resource not found." });
 });
